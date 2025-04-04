@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>IronUp Questionnaire</title>
+    <link rel="stylesheet" href="/styles/app.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="">
+    <main class="main-content iron-up-page">
+      <form id="questionnaireForm" class="questionnaire-step">
+        <!-- Step indicator -->
+        <div id="stepIndicator">Step 1 of 8</div>
+
+        <!-- Step 1 -->
+        <div class="step" id="step1">
+          <label>Select Age Group:</label>
+          <div id="ageGroups"></div>
+          <button type="button" id="nextStep1" disabled>Next</button>
+        </div>
+
+        <!-- Steps 2 to 8 (dynamically generated) -->
+        <div class="step" id="step2">
+          <!-- Step 2 content will be inserted here -->
+        </div>
+        <div class="step" id="step3">
+          <!-- Step 3 content will be inserted here -->
+        </div>
+        <div class="step" id="step4">
+          <!-- Step 4 content will be inserted here -->
+        </div>
+        <div class="step" id="step5">
+          <!-- Step 5 content will be inserted here -->
+        </div>
+        <div class="step" id="step6">
+          <!-- Step 6 content will be inserted here -->
+        </div>
+        <div class="step" id="step7">
+          <!-- Step 7 content will be inserted here -->
+        </div>
+        <div class="step" id="step8">
+          <!-- Step 8 content will be inserted here -->
+        </div>
+      </form>
+
+      <!-- Final Result -->
+      <div id="result" style="display: none">
+        <h3>Your Total Score: <span id="totalScore"></span></h3>
+      </div>
+    </main>
+    <footer class="footer">Footer</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@use "../config/index" as *;
+
+:root {
+  --blue-100: #009fe3;
+  --purple-400: #a3238e;
+  --purple-500: #4e2683;
+  --grey-200: #dedede;
+  --grey-700: #6c6c6c;
+  --grey-900: #232323;
+  --red-500: #fc3a38;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #fff;
+  color: var(--grey-900);
+  font-family: $body-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+// Fix for safari
+@media (max-width: 767px) {
+  html {
+    -webkit-text-size-adjust: none;
+    touch-action: manipulation;
+  }
+  body {
+    touch-action: pan-x pan-y;
+  }
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.row {
+  &:not(.g-0, .gx-0) {
+    --bs-gutter-x: 1.875rem;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+a,
+.type-link {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    outline: none;
+    text-decoration: underline;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.type-link {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+iframe {
+  max-width: 100%;
+  border: none;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}

@@ -112,44 +112,163 @@ h2 {
   height: 100%;
 }
 
-.main-layout {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4e2683), to(#48003c));
-  background: linear-gradient(180deg, #4e2683 0%, #48003c 100%);
-  position: relative;
-  min-height: 900px;
-  overflow-x: hidden;
-}
-.main-layout .bg-layout {
-  min-width: 1440px;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  mix-blend-mode: soft-light;
-  pointer-events: none;
-}
-.main-layout .main-content {
-  position: relative;
-  padding-bottom: 40px;
-}
-@media (max-width: 1199px) {
-  .main-layout {
-    min-height: 100%;
-  }
-  .main-layout .bg-layout {
-    display: none;
-  }
-  .main-layout .main-content {
-    padding-bottom: 20px;
-  }
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
 }
 
+.header {
+  background-color: #ed2025;
+  color: #fff;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  background-color: #ed2025;
+  color: #fff;
+}
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer .f-left {
+  text-align: center;
+}
+.footer .menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+.footer .menu-footer li + li {
+  margin-left: 30px;
+}
+.footer .menu-footer a {
+  color: #fff;
+  display: block;
+}
+
+.home-page .section-fighting {
+  background-color: #fff;
+  min-height: 300px;
+}
+.home-page .section-about {
+  background-color: #ed2025;
+  min-height: 300px;
+}
+.home-page .section-benefits {
+  background-color: #d5ebf7;
+  min-height: 300px;
+}
+
+.questionnaire-step {
+  padding: 40px 0 50px;
+}
 .questionnaire-step .step {
   display: none;
 }
 .questionnaire-step .active {
   display: block;
+}
+.questionnaire-step .step-indicator {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 95px 20px 1fr;
+  grid-template-columns: 95px 1fr;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.questionnaire-step .progress-bar {
+  border-radius: 10px;
+  width: 100%;
+  height: 15px;
+}
+.questionnaire-step .progress-bar::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+.questionnaire-step .progress-bar::-webkit-progress-value {
+  background-color: #ed2025;
+  border-radius: 10px;
+}
+.questionnaire-step .list-answers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 60px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 60px;
+}
+.questionnaire-step .list-answers input[type=radio] {
+  display: none;
+}
+.questionnaire-step .list-answers label {
+  border: 1px solid #ed2025;
+  border-radius: 10px;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+.questionnaire-step .list-answers input[type=radio]:checked + label {
+  background-color: #ed2025;
+  color: #fff;
+}
+.questionnaire-step .f-action {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.questionnaire-step .f-action button {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  color: #ed2025;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.questionnaire-step .f-action button:disabled, .questionnaire-step .f-action button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.questionnaire-step .f-action button.btn-next {
+  background-color: #ed2025;
+  color: #fff;
 }
 /*# sourceMappingURL=app.css.map */

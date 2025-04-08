@@ -18,10 +18,10 @@ const QUESTIONNAIRE = [
         id: 2,
         name: "Infant formula milk",
         questions:
-          "How many portions of infant formula does your child consume daily? One portion equals to 250ml.",
+          "How many portions of infant formula does your child consume daily?<br />One portion equals to 250ml.",
         answers: [
           { id: 4, text: "≥2 portions/day", score: 98 },
-          { id: 6, text: "1 portion/day", score: 49 },
+          { id: 5, text: "1 portion/day", score: 49 },
           { id: 6, text: "<1 portion/day", score: 25 },
           { id: 191, text: "Rarely/Never", score: 0 },
         ],
@@ -30,7 +30,7 @@ const QUESTIONNAIRE = [
         id: 3,
         name: "Iron-enriched cereals",
         questions:
-          "How many portions of iron-fortified cereal does your child consume daily? One portion equals to 8 teaspoons (48g) of powder.",
+          "How many portions of iron-fortified cereal does your child consume daily?<br />One portion equals to 8 teaspoons (48g) of powder.",
         answers: [
           { id: 7, text: "≥2 portions/day", score: 68 },
           { id: 8, text: "1 portion/day", score: 34 },
@@ -42,7 +42,7 @@ const QUESTIONNAIRE = [
         id: 4,
         name: "Liver/blood",
         questions:
-          "How many portions of liver does your child consume in a week? One portion equals to 3 teaspoons (15g).",
+          "How many portions of liver does your child consume in a week?<br />One portion equals to 3 teaspoons (15g).",
         answers: [
           { id: 10, text: "≥5 portions/week", score: 17 },
           { id: 11, text: "2 to 4 portions/week", score: 9 },
@@ -54,7 +54,7 @@ const QUESTIONNAIRE = [
         id: 5,
         name: "Meats",
         questions:
-          "How many portions of red meats (beef, lamb, goat, veal, pork etc.) does your child consume in a week? One portion equals to 3 teaspoon (15g).",
+          "How many portions of red meats (beef, lamb, goat, veal, pork etc.) does your child consume in a week?<br />One portion equals to 3 teaspoon (15g).",
         answers: [
           { id: 13, text: "≥5 portions/week", score: 7 },
           { id: 14, text: "2 to 4 portions/week", score: 3 },
@@ -66,7 +66,7 @@ const QUESTIONNAIRE = [
         id: 6,
         name: "Chicken/Fish/Egg",
         questions:
-          "How many portions of other source of protein (egg, fish, chicken) does your child consume in a week? One portion equals to 3 teaspoon (15g).",
+          "How many portions of other source of protein (egg, fish, chicken) does your child consume in a week?<br />One portion equals to 3 teaspoon (15g).",
         answers: [
           { id: 16, text: "≥5 portions/week", score: 1 },
           { id: 17, text: "2 to 4 portions/week", score: 1 },
@@ -78,7 +78,7 @@ const QUESTIONNAIRE = [
         id: 7,
         name: "Other iron sources",
         questions:
-          "How many portions of legume (beans, nuts etc.) does your child consume in a week? One portion equals to 3 teaspoon (15g).",
+          "How many portions of legume (beans, nuts etc.) does your child consume in a week?<br />One portion equals to 3 teaspoon (15g).",
         answers: [
           { id: 19, text: "≥5 portions/week", score: 1 },
           { id: 20, text: "2 to 4 portions/week", score: 0 },
@@ -108,7 +108,7 @@ const QUESTIONNAIRE = [
         id: 2,
         name: "Growing-up milk",
         questions:
-          "How many portions of growing up formula milk does your child consume daily? One portion equals to 250ml.",
+          "How many portions of growing up formula milk does your child consume daily?<br />One portion equals to 250ml.",
         answers: [
           { id: 25, text: "≥2 portions/day", score: 196 },
           { id: 26, text: "1 portion/day", score: 85 },
@@ -120,7 +120,7 @@ const QUESTIONNAIRE = [
         id: 3,
         name: "Iron-enriched cereals",
         questions:
-          "How many portions of iron-fortified cereal does your child consume daily? One portion equals to 8 teaspoons (48g) of powder.",
+          "How many portions of iron-fortified cereal does your child consume daily?<br />One portion equals to 8 teaspoons (48g) of powder.",
         answers: [
           { id: 28, text: "≥2 portions/day", score: 108 },
           { id: 29, text: "1 portion/day", score: 54 },
@@ -132,7 +132,7 @@ const QUESTIONNAIRE = [
         id: 4,
         name: "Liver/blood",
         questions:
-          "How many portions of liver does your child consume in a week? One portion equals to 6 teaspoons (30g).",
+          "How many portions of liver does your child consume in a week?<br />One portion equals to 6 teaspoons (30g).",
         answers: [
           { id: 31, text: "≥5 portions/week", score: 55 },
           { id: 32, text: "2 to 4 portions/week", score: 29 },
@@ -144,7 +144,7 @@ const QUESTIONNAIRE = [
         id: 5,
         name: "Meats",
         questions:
-          "How many portion of red meats (beef, lamb, goat, veal, pork etc.) does your child consume in a week? One portion equals to 6 teaspoons (30g).",
+          "How many portion of red meats (beef, lamb, goat, veal, pork etc.) does your child consume in a week?<br />One portion equals to 6 teaspoons (30g).",
         answers: [
           { id: 34, text: "≥5 portions/week", score: 22 },
           { id: 35, text: "2 to 4 portions/week", score: 11 },
@@ -156,7 +156,7 @@ const QUESTIONNAIRE = [
         id: 6,
         name: "Chicken/Fish/Egg",
         questions:
-          "How many portions of other source of protein (egg, fish, chicken) does your child consume in a week? One portion equals to 6 teaspoons (30g).",
+          "How many portions of other source of protein (egg, fish, chicken) does your child consume in a week?<br />One portion equals to 6 teaspoons (30g).",
         answers: [
           { id: 37, text: "≥5 portions/week", score: 4 },
           { id: 38, text: "2 to 4 portions/week", score: 2 },
@@ -168,7 +168,7 @@ const QUESTIONNAIRE = [
         id: 7,
         name: "Other iron sources",
         questions:
-          "How many portions of legume (beans, nuts etc.) does your child consume in a week? One portion equals to 6 teaspoons (30g).",
+          "How many portions of legume (beans, nuts etc.) does your child consume in a week?<br />One portion equals to 6 teaspoons (30g).",
         answers: [
           { id: 40, text: "≥5 portions/week", score: 3 },
           { id: 41, text: "2 to 4 portions/week", score: 2 },
@@ -198,7 +198,7 @@ const QUESTIONNAIRE = [
         id: 2,
         name: "Growing-up milk",
         questions:
-          "How many portions of growing up formula milk does your child consume daily? One portion equals to 250ml.",
+          "How many portions of growing up formula milk does your child consume daily?<br />One portion equals to 250ml.",
         answers: [
           { id: 46, text: "≥2 portions/day", score: 156 },
           { id: 47, text: "1 portion/day", score: 78 },
@@ -210,7 +210,7 @@ const QUESTIONNAIRE = [
         id: 3,
         name: "Iron-enriched cereals",
         questions:
-          "How many portions of iron-fortified cereal does your child consume daily? One portion equals to 8 teaspoons (48g) of powder.",
+          "How many portions of iron-fortified cereal does your child consume daily?<br />One portion equals to 8 teaspoons (48g) of powder.",
         answers: [
           { id: 49, text: "≥2 portions/day", score: 100 },
           { id: 50, text: "1 portion/day", score: 50 },
@@ -222,7 +222,7 @@ const QUESTIONNAIRE = [
         id: 4,
         name: "Liver/blood",
         questions:
-          "How many portions of liver does your child consume in a week? One portion equals to 10 teaspoons (50g).",
+          "How many portions of liver does your child consume in a week?<br />One portion equals to 10 teaspoons (50g).",
         answers: [
           { id: 52, text: "≥5 portions/week", score: 85 },
           { id: 53, text: "2 to 4 portions/week", score: 43 },
@@ -234,7 +234,7 @@ const QUESTIONNAIRE = [
         id: 5,
         name: "Meats",
         questions:
-          "How many portion of red meats (beef, lamb, goat, veal, pork etc.) does your child consume in a week? One portion equals to 10 teaspoons (50g).",
+          "How many portion of red meats (beef, lamb, goat, veal, pork etc.) does your child consume in a week?<br />One portion equals to 10 teaspoons (50g).",
         answers: [
           { id: 55, text: "≥5 portions/week", score: 33 },
           { id: 56, text: "2 to 4 portions/week", score: 17 },
@@ -246,7 +246,7 @@ const QUESTIONNAIRE = [
         id: 6,
         name: "Chicken/Fish/Egg",
         questions:
-          "How many portions of other source of protein (egg, fish, chicken) does your child consume in a week? One portion equals to 10 teaspoons (50g).",
+          "How many portions of other source of protein (egg, fish, chicken) does your child consume in a week?<br />One portion equals to 10 teaspoons (50g).",
         answers: [
           { id: 58, text: "≥5 portions/week", score: 7 },
           { id: 59, text: "2 to 4 portions/week", score: 3 },
@@ -258,7 +258,7 @@ const QUESTIONNAIRE = [
         id: 7,
         name: "Other iron sources",
         questions:
-          "How many portions of legume (beans, nuts etc.) does your child consume in a week? One portion equals to 10 teaspoons (50g).",
+          "How many portions of legume (beans, nuts etc.) does your child consume in a week?<br />One portion equals to 10 teaspoons (50g).",
         answers: [
           { id: 61, text: "≥5 portions/week", score: 5 },
           { id: 62, text: "2 to 4 portions/week", score: 2 },
@@ -278,14 +278,18 @@ $(document).ready(function () {
 
   // Function to generate the age group options
   function generateAgeGroupStep() {
-    const ageGroups = QUESTIONNAIRE.map(
-      (group) => `
-      <label>
-        <input type="radio" name="ageGroup" value="${group.ageGroupId}" class="ageGroupRadio">
-        ${group.ageGroup}
-      </label>
-    `
-    ).join("");
+    const ageGroups = `
+      <div class="list-answers">
+        ${QUESTIONNAIRE.map(
+          (group) => `
+          <div class="f-radio">
+            <input type="radio" name="ageGroup" value="${group.ageGroupId}" class="ageGroupRadio" id="ageGroup-${group.ageGroupId}">
+            <label for="ageGroup-${group.ageGroupId}">${group.ageGroup}</label>
+          </div>
+        `
+        ).join("")}
+      </div>
+      `;
 
     $("#ageGroups").html(ageGroups);
     $("#step1").addClass("active");
@@ -296,29 +300,33 @@ $(document).ready(function () {
     const allowNext = totalScore[`${step}`] !== undefined;
     const category = selectedAgeGroup.categories[step - 2]; // Adjust step to index
     const questionsHtml = `
-        <div class="category" id="category-${category.id}">
-          <p>${category.questions}</p>
-          ${category.answers
-            .map((answer) => {
-              const isChecked = totalScore[`${step}`] === answer.score;
-              return `
-            <label>
-              <input type="radio" name="question${category.id}" value="${
-                answer.score
-              }" ${isChecked ? "checked" : ""} class="answerRadio">
-              ${answer.text}
-            </label>
+      <p>${category.questions}</p>
+      <div class="list-answers">
+        ${category.answers
+          .map((answer) => {
+            const isChecked = totalScore[`${step}`] === answer.score;
+            return `
+            <div class="f-radio">
+            <input type="radio" name="question${category.id}" value="${
+              answer.score
+            }" ${isChecked ? "checked" : ""} class="answerRadio" id="answer-${
+              answer.id
+            }">
+            <label for="answer-${answer.id}">${answer.text}</label>
+            </div>
           `;
-            })
-            .join("")}
-        </div>
+          })
+          .join("")}
+      </div>
       `;
 
     $(`#step${step}`).html(`
         <h3>${category.name}</h3>
         ${questionsHtml}
-        <button type="button" id="backStep${step}">Back</button>
-        <button type="button" id="nextStep${step}" ${allowNext ? "" : "disabled"}>Next</button>
+        <div class="f-action">
+          <button type="button" class="btn-back" id="backStep${step}">Previous</button>
+          <button type="button" class="btn-next" id="nextStep${step}" ${allowNext ? "" : "disabled"}>Next</button>
+        </div>
       `);
 
     // Event listener for radio buttons to enable/disable next button
@@ -338,6 +346,7 @@ $(document).ready(function () {
     if (currentStep <= 8) {
       $(`#step${currentStep}`).addClass("active");
       $("#stepIndicator").text(`Step ${currentStep} of 8`);
+      $("#stepProgress").val(currentStep);
       generateStep(currentStep);
     } else {
       const sum = Object.values(totalScore).reduce(
@@ -357,6 +366,7 @@ $(document).ready(function () {
     if (currentStep >= 1) {
       $(`#step${currentStep}`).addClass("active");
       $("#stepIndicator").text(`Step ${currentStep} of 8`);
+      $("#stepProgress").val(currentStep);
     }
   }
 

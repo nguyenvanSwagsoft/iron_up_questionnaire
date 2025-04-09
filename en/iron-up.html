@@ -158,7 +158,9 @@
         <div class="f-righgt">
           <ul class="menu-footer">
             <li>
-              <a href="/en" title="Cookies Management">Cookies Management</a>
+              <a href="#" title="Cookies Management" id="cookies-management"
+                >Cookies Management</a
+              >
             </li>
             <li>
               <a href="terms-of-use" title="Terms Of Use">Terms Of Use</a>
@@ -176,7 +178,66 @@
       </div>
     </footer>
 
-    <script src="../script.js"></script>
-    <script src="../questionnaire.js"></script>
+    <div class="modal fade consent-preferences-modal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Customize Consent Preferences</h2>
+            <img
+              src="../images/components/button/btn-close.svg"
+              alt="Close"
+              class="btn-close"
+            />
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">
+              We use cookies to help you navigate efficiently and perform
+              certain functions. You will find detailed information about all
+              cookies under each consent category below. The cookies that are
+              categorized as "Necessary" are stored on your browser as they are
+              essential for enabling the basic functionalities of the site. We
+              also use third-party cookies that help us analyze how you use this
+              website, store your preferences, and provide the content and
+              advertisements that are relevant to you. These cookies will only
+              be stored in your browser with your prior consent. You can choose
+              to enable or disable some or all of these cookies but disabling
+              some of them may affect your browsing experience.
+            </p>
+            <div class="line"></div>
+            <h4>Necessary <span class="green">Always Active</span></h4>
+            <p class="mb-0">
+              Necessary cookies are required to enable the basic features of
+              this site, such as providing secure log-in or adjusting your
+              consent preferences. These cookies do not store any personally
+              identifiable data.
+            </p>
+            <div class="line"></div>
+            <h4>
+              Analytics
+              <label class="switch">
+                <input type="checkbox" id="toggle-analytics" />
+                <span class="slider round"></span>
+              </label>
+            </h4>
+            <p class="mb-0">
+              Analytical cookies are used to understand how visitors interact
+              with the website. These cookies help provide information on
+              metrics such as the number of visitors, bounce rate, traffic
+              source, etc.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-reject-all">Reject all</button>
+            <button type="button" class="btn btn-fill btn-accept-all">
+              Accept All
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/cookies-management.js"></script>
+    <script src="../scripts/questionnaire.js"></script>
   </body>
 </html>

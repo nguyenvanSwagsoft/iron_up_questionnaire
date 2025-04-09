@@ -1,15 +1,5 @@
 @use "../config/index" as *;
 
-:root {
-  --blue-100: #009fe3;
-  --purple-400: #a3238e;
-  --purple-500: #4e2683;
-  --grey-200: #dedede;
-  --grey-700: #6c6c6c;
-  --grey-900: #232323;
-  --red-500: #fc3a38;
-}
-
 *,
 *::before,
 *::after {
@@ -21,11 +11,11 @@
 html,
 body {
   background: #fff;
-  color: var(--grey-900);
+  color: $brown-500;
   font-family: $body-font;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 // Fix for safari
@@ -36,19 +26,6 @@ body {
   }
   body {
     touch-action: pan-x pan-y;
-  }
-}
-
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm,
-.row {
-  &:not(.g-0, .gx-0) {
-    --bs-gutter-x: 1.875rem;
   }
 }
 
@@ -83,7 +60,7 @@ img {
 }
 
 p {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 iframe {

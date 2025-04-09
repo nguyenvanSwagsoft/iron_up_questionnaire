@@ -1,0 +1,121 @@
+@use "../config/index" as *;
+
+.section-fighting {
+  background-color: #fff;
+  .container {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    display: grid;
+    grid-template-columns: 1fr 580px;
+    gap: 40px;
+    align-items: center;
+  }
+  .f-left {
+    .f-banner {
+      margin-bottom: 32px;
+    }
+  }
+  .f-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    .btn {
+      background: url("../images/components/button/btn-home-border.png")
+        no-repeat center;
+      color: $red-500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 267px;
+      height: 72px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      &.btn-fill {
+        background-image: url("../images/components/button/btn-home-fill.png");
+        color: #fff;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.section-about {
+  background-color: #ff1f3c;
+  .container {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+  .section-inner {
+    background: url("../images/home/bg-about.png") no-repeat center;
+    height: 708px;
+    position: relative;
+    padding-left: 120px;
+    padding-top: 150px;
+  }
+  .banner-africa {
+    position: absolute;
+    top: 79px;
+    right: -19px;
+  }
+  .content-inner {
+    width: 480px;
+  }
+  h2 {
+    color: $red-500;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    align-items: center;
+    line-height: 54px;
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
+  .f-about {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 30px;
+    margin-bottom: 24px;
+    text-align: justify;
+  }
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.font-small {
+      font-size: 12px;
+    }
+  }
+}
+.section-benefits {
+  background: url("../images/home/bg-benefits.jpg") no-repeat center;
+  height: 540px;
+  .container {
+    padding-top: 70px;
+  }
+  .section-inner {
+    background: url("../images/home/bg-benefits-inner.png") no-repeat center;
+    width: 472px;
+    height: 400px;
+    padding: 42px 76px 0;
+    margin-left: auto;
+  }
+  h2 {
+    color: $red-500;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 1;
+    font-size: 44px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

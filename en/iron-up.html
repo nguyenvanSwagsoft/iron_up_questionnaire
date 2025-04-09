@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>IronUp Questionnaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/app.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="">
+    <header class="header">
+      <div class="container">
+        <div class="f-logo" id="logo">
+          <span class="f-img">
+            <img src="../images/eng.svg" alt="" />
+          </span>
+          English
+          <img src="../images/arrow-down.svg" alt="" class="f-icon" />
+          <ul class="dropdown-menu">
+            <li data-lang="en">
+              <img src="../images/eng.svg" alt="English" />English
+            </li>
+            <li data-lang="fr">
+              <img src="../images/france.svg" alt="French" />French
+            </li>
+          </ul>
+        </div>
+        <div class="f-menu" id="main-menu">
+          <img src="../images/menu.svg" alt="" />
+          <strong>MENU</strong>
+          <ul class="dropdown-menu">
+            <li><a href="/en" title="Homepage">Homepage</a></li>
+            <li>
+              <a href="/en" title="Iron Tracker">Iron Tracker</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main-content iron-up-page">
+      <div class="container">
+        <!-- Step indicator -->
+        <div class="step-indicator">
+          <span id="stepIndicator">1 of 8</span>
+          <progress
+            id="stepProgress"
+            value="1"
+            max="8"
+            class="progress-bar"
+          ></progress>
+        </div>
+
+        <form id="questionnaireForm" class="questionnaire-step">
+          <!-- Step 1 -->
+          <div class="step" id="step1">
+            <div class="step-inner">
+              <h3>
+                <img
+                  src="../images/home/icon-benefits.svg"
+                  alt="Benefits of Iron Tracker"
+                  width="108"
+                />
+                Select Age Group:
+              </h3>
+              <p>Please select age from the list below</p>
+              <div id="ageGroups"></div>
+            </div>
+            <div class="f-action">
+              <button type="button" id="backStep1" class="btn-back" disabled>
+                Previous
+              </button>
+              <button type="button" id="nextStep1" class="btn-next" disabled>
+                Next
+              </button>
+            </div>
+          </div>
+
+          <!-- Steps 2 to 8 (dynamically generated) -->
+          <div class="step" id="step2">
+            <!-- Step 2 content will be inserted here -->
+          </div>
+          <div class="step" id="step3">
+            <!-- Step 3 content will be inserted here -->
+          </div>
+          <div class="step" id="step4">
+            <!-- Step 4 content will be inserted here -->
+          </div>
+          <div class="step" id="step5">
+            <!-- Step 5 content will be inserted here -->
+          </div>
+          <div class="step" id="step6">
+            <!-- Step 6 content will be inserted here -->
+          </div>
+          <div class="step" id="step7">
+            <!-- Step 7 content will be inserted here -->
+          </div>
+          <div class="step" id="step8">
+            <!-- Step 8 content will be inserted here -->
+          </div>
+        </form>
+
+        <!-- Final Result -->
+        <div class="result" id="result" style="display: none">
+          <h2>
+            <img src="../images/iron-up/icon-score.svg" alt="HEALTH SCORE !" />
+            <span id="totalScore">999</span>
+            <strong>HEALTH SCORE !</strong>
+          </h2>
+          <div class="section-consult">
+            <div class="f-title">
+              <img src="../images/iron-up/icon-consult.svg" alt="" />
+              <span class="f-content">
+                <p>
+                  Your child maybe consuming enough iron to meet his/her dietary
+                  needs.
+                </p>
+                <p>Consult your doctor for further advice.</p>
+              </span>
+            </div>
+            <p>
+              Remember to adhere to good health practices. Don’t hesitate to
+              schedule iron screening for your child at a health center.
+            </p>
+            <p>
+              This solution shall be used solely as an information tool with no
+              medical purpose. It is not a medical device, and in any case shall
+              not be considered as a substitute or help for any medical advice.
+              For any concern or question about your baby’s health or nutrition,
+              you should always seek medical advice from a doctor/physician or
+              healthcare professional. Medical advice should always be sought
+              for a child’s nutrition and health monitoring.
+            </p>
+          </div>
+          <div class="section-action">
+            <a href="/en" title="Start screening test" class="btn btn-fill"
+              >Find a screening center</a
+            >
+            <a href="/en" title="Back to Homepage" class="btn btn-outline"
+              >Back to Homepage</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="f-left">
+          © 2024 Danone Nutricia Côte d’Ivoire<br />All rights reserved
+        </div>
+        <div class="f-righgt">
+          <ul class="menu-footer">
+            <li>
+              <a href="/" title="Cookies Management">Cookies Management</a>
+            </li>
+            <li>
+              <a href="/terms-of-use" title="Terms Of Use">Terms Of Use</a>
+            </li>
+            <li>
+              <a href="/privacy-policy" title="Privacy Policy"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="/Cookie-statement" title="Cookie Statement"
+                >Cookie Statement</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../questionnaire.js"></script>
+  </body>
+</html>

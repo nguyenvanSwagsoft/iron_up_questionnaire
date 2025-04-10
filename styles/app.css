@@ -76,6 +76,22 @@ h2 {
   margin-bottom: 0;
 }
 
+ul {
+  padding-left: 16px;
+}
+ul li::marker {
+  font-size: 12px;
+}
+
+ol {
+  padding-left: 23px;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -470,6 +486,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  padding-left: 0;
 }
 .footer .menu-footer li + li {
   margin-left: 32px;
@@ -481,6 +498,101 @@ h2 {
 }
 .footer .menu-footer a:hover {
   text-decoration: none;
+}
+
+.default-page .container {
+  max-width: 1070px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.default-page h1 {
+  color: #ff1f3c;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+.default-page h2 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+.default-page h3 {
+  color: #ff1f3c;
+  font-size: 28px;
+  line-height: 1.14;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+.default-page h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.33;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.default-page a {
+  color: #603f1b;
+  text-decoration: underline;
+}
+.default-page ol strong {
+  font-weight: 600;
+}
+.default-page ol ul {
+  list-style-type: disc;
+}
+.default-page ol.bold-number > li::marker {
+  font-weight: 600;
+}
+.default-page ol.alpha {
+  list-style-type: lower-alpha;
+}
+.default-page ol.roman-list {
+  list-style: none;
+  counter-reset: roman-counter;
+}
+.default-page ol.roman-list > li {
+  counter-increment: roman-counter;
+  position: relative;
+  padding-left: 25px;
+}
+.default-page ol.roman-list > li::before {
+  content: counter(roman-counter, lower-roman) ")";
+  position: absolute;
+  left: 0;
+}
+.default-page ol.margin-list > li {
+  margin-bottom: 20px;
+}
+.default-page table {
+  width: 100%;
+  table-layout: fixed;
+}
+.default-page table th {
+  border-top: 1px solid rgba(96, 63, 27, 0.3);
+  border-bottom: 1px solid rgba(96, 63, 27, 0.3);
+  padding: 12px 8px;
+  text-align: left;
+}
+.default-page table th:first-child {
+  padding-left: 12px;
+}
+.default-page table th:last-child {
+  padding-right: 12px;
+}
+.default-page table td {
+  border-bottom: 1px solid rgba(96, 63, 27, 0.3);
+  vertical-align: top;
+  padding: 12px 8px;
+}
+.default-page table td:first-child {
+  padding-left: 12px;
+}
+.default-page table td:last-child {
+  padding-right: 12px;
+}
+.default-page table p strong {
+  font-weight: 600;
 }
 
 .section-fighting {
@@ -813,7 +925,7 @@ h2 {
   background: url("../../images/components/radio/radio.svg") no-repeat center;
   color: #ff1f3c;
   width: 320px;
-  height: 70px;
+  height: 72px;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;

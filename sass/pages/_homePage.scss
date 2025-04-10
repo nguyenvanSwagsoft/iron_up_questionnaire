@@ -11,6 +11,7 @@
     align-items: center;
   }
   .f-left {
+    text-align: justify;
     .f-banner {
       margin-bottom: 32px;
     }
@@ -43,6 +44,7 @@
     }
   }
 }
+
 .section-about {
   background-color: #ff1f3c;
   .container {
@@ -63,6 +65,7 @@
   }
   .content-inner {
     width: 480px;
+    text-align: justify;
   }
   h2 {
     color: $red-500;
@@ -81,6 +84,9 @@
     margin-bottom: 24px;
     text-align: justify;
   }
+  .banner-africa-mobile {
+    display: none;
+  }
   p {
     &:last-child {
       margin-bottom: 0;
@@ -90,9 +96,11 @@
     }
   }
 }
+
 .section-benefits {
   background: url("../images/home/bg-benefits.jpg") no-repeat center;
   height: 540px;
+  text-align: justify;
   .container {
     padding-top: 70px;
   }
@@ -116,6 +124,131 @@
     margin-bottom: 25px;
     &:last-child {
       margin-bottom: 0;
+    }
+    &.font-small {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .section-fighting {
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      gap: 32px;
+    }
+    .f-left {
+      order: 10;
+      .f-banner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .section-about {
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .banner-africa {
+      display: none;
+    }
+    .section-inner {
+      background-size: 100% auto;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+    .content-inner {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-fighting {
+    .f-left {
+      .f-banner {
+        max-width: 163px;
+      }
+    }
+    .f-right {
+      img {
+        max-width: 300px;
+      }
+    }
+    .f-action {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      .btn + .btn {
+        margin-top: 16px;
+      }
+    }
+  }
+  .section-about {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .banner-africa-mobile {
+      display: block;
+      margin: 32px auto;
+      max-width: 200px;
+    }
+    .section-inner {
+      background-image: url("../images/home/bg-about-mobile.png");
+      background-size: 360px auto;
+      height: 1000px;
+      padding: 0 20px;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    h2 {
+      max-width: 272px;
+      font-size: 32px;
+      line-height: 1;
+      grid-template-columns: 46px 1fr;
+      margin: 0 auto 32px;
+    }
+    .f-about {
+      display: block;
+      > img {
+        min-width: 240px;
+        display: block;
+        margin: 0 auto 32px;
+      }
+    }
+  }
+  .section-benefits {
+    background-image: url("../images/home/bg-benefits-mobile.jpg");
+    background-size: cover;
+    height: 700px;
+    .container {
+      padding-top: 30px;
+    }
+    .section-inner {
+      background-size: 340px auto;
+      max-width: 340px;
+      height: auto;
+      min-height: 320px;
+      padding: 30px 28px 0;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 32px;
+      margin-bottom: 24px;
+      img {
+        max-width: 58px;
+      }
     }
   }
 }

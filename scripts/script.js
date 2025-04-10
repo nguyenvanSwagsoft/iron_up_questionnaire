@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(this).toggleClass("show");
   });
 
-  // Đóng dropdown nếu click bên ngoài
+  // Close dropdown if clicked outside
   $(document).on("click", function (e) {
     const $target = $(e.target);
     if (
@@ -23,14 +23,14 @@ $(document).ready(function () {
   });
 
   $("#logo .dropdown-menu li").on("click", function () {
-    const selectedLang = $(this).data("lang"); // 'en' hoặc 'fr'
-    const currentUrl = window.location.pathname; // ví dụ: /en/iron-up.html
+    const selectedLang = $(this).data("lang"); // 'en' or 'fr'
+    const currentUrl = window.location.pathname; // ex: /en/iron-tracker.html
 
-    // Tách URL thành mảng
-    const parts = currentUrl.split("/").filter(Boolean); // ['en', 'iron-up.html']
+    // Split URL into array
+    const parts = currentUrl.split("/").filter(Boolean); // ['en', 'iron-tracker.html']
 
     if (parts.length > 0) {
-      parts[0] = selectedLang; // Thay đổi ngôn ngữ
+      parts[0] = selectedLang; // Change language
       const newPath = "/" + parts.join("/");
       window.location.href = newPath;
     }

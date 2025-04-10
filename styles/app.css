@@ -797,10 +797,11 @@ table {
 }
 .iron-up-page .result h2 span {
   color: #fff;
-  font-size: 75px;
+  font-family: "Prater Sans Bold";
+  font-size: 80px;
   font-weight: 700;
   position: absolute;
-  left: 79px;
+  left: 81px;
   top: 142px;
   width: 158px;
 }

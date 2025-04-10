@@ -360,6 +360,7 @@ $(document).ready(function () {
         (acc, value) => acc + value,
         0
       );
+      $(".step-indicator").hide();
       $("#questionnaireForm").hide();
       $("#result").show();
       $("#totalScore").text(sum);

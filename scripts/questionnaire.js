@@ -296,6 +296,7 @@ $(document).ready(function () {
   let currentStep = 1;
   let selectedAgeGroup = null;
   let isChangeAgeGroup = false;
+  let dataIdaAnswer = {};
 
   // Function to generate the age group options
   function generateAgeGroupStep() {
@@ -332,7 +333,9 @@ $(document).ready(function () {
               listQuestions.Question_number
             }" value="${answer.score}" ${
               isChecked ? "checked" : ""
-            } class="answerRadio" id="answer-${answer.Answer_ID}">
+            } class="answerRadio" id="answer-${answer.Answer_ID}" data-id="${
+              answer.Answer_ID
+            }">
             <label for="answer-${answer.Answer_ID}">${answer.text}</label>
             </div>
           `;
@@ -359,6 +362,9 @@ $(document).ready(function () {
 
     // Event listener for radio buttons to enable/disable next button
     $(`#step${step} input[type="radio"]`).on("change", function () {
+      dataIdaAnswer[`${step - 1}`] = $(
+        `#step${step} input[type="radio"]:checked`
+      ).data("id");
       totalScore[`${step}`] = parseInt(
         $(`#step${step}`).find('input[type="radio"]:checked').val()
       );
@@ -381,6 +387,38 @@ $(document).ready(function () {
         (acc, value) => acc + value,
         0
       );
+      selectedAgeGroup.list = selectedAgeGroup.list.map((item) => {
+        const selectedAnswerId = dataIdaAnswer[item.Question_number];
+        const selectedAnswer = item.answers.find(
+          (ans) => ans.Answer_ID === selectedAnswerId
+        );
+        return {
+          Question_category_ID: item.Question_category_ID,
+          Question_number: item.Question_number,
+          Category: item.Category,
+          Question: item.Question,
+          Answer_ID: selectedAnswer.Answer_ID,
+          score: selectedAnswer.score,
+          text: selectedAnswer.text,
+        };
+      });
+
+      selectedAgeGroup["Health_Score"] = sum;
+
+      // Download JSON file
+      // const json = JSON.stringify(selectedAgeGroup, null, 2); // format đẹp
+      // const blob = new Blob([json], { type: "application/json" });
+      // const url = URL.createObjectURL(blob);
+
+      // const a = $("<a>")
+      //   .attr("href", url)
+      //   .attr("download", "iron_tracker_result.json")
+      //   .appendTo("body");
+
+      // a[0].click();
+      // a.remove();
+      // URL.revokeObjectURL(url);
+
       $(".step-indicator").hide();
       $("#questionnaireForm").hide();
       $("#result").show();

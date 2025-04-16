@@ -805,7 +805,6 @@ table {
 }
 
 .section-benefits {
-  background: url("../images/home/bg-benefits.jpg") no-repeat center;
   height: 540px;
   text-align: justify;
 }
@@ -842,6 +841,17 @@ table {
 }
 .section-benefits p.font-small {
   font-size: 12px;
+}
+@media (min-width: 768px) {
+  .section-benefits {
+    background: #e1ebf4;
+    background: -webkit-gradient(linear, left top, right top, from(#96a9b1), to(#e1ebf4));
+    background: linear-gradient(90deg, #96a9b1 0%, #e1ebf4 100%);
+  }
+  .section-benefits .bg {
+    background: url("../images/home/bg-benefits.png") no-repeat center;
+    height: 100%;
+  }
 }
 
 @media (max-width: 1199px) {

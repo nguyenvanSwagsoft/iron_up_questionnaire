@@ -98,7 +98,6 @@
 }
 
 .section-benefits {
-  background: url("../images/home/bg-benefits.jpg") no-repeat center;
   height: 540px;
   text-align: justify;
   .container {
@@ -127,6 +126,14 @@
     }
     &.font-small {
       font-size: 12px;
+    }
+  }
+  @media (min-width: 768px) {
+    background: #e1ebf4;
+    background: linear-gradient(90deg, #96a9b1 0%, #e1ebf4 100%);
+    .bg {
+      background: url("../images/home/bg-benefits.png") no-repeat center;
+      height: 100%;
     }
   }
 }
@@ -231,6 +238,7 @@
     background-image: url("../images/home/bg-benefits-mobile.jpg");
     background-size: cover;
     height: 700px;
+
     .container {
       padding-top: 30px;
     }

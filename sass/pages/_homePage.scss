@@ -22,9 +22,8 @@
     justify-content: space-between;
     margin-top: 32px;
     .btn {
-      background: url("../images/components/button/btn-home-border.png")
-        no-repeat center;
-      color: $red-500;
+      background-image: url("../images/components/button/btn-home-fill.png");
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -34,10 +33,6 @@
       font-weight: 700;
       text-align: center;
       text-transform: uppercase;
-      &.btn-fill {
-        background-image: url("../images/components/button/btn-home-fill.png");
-        color: #fff;
-      }
       &:hover {
         text-decoration: none;
       }
@@ -98,7 +93,8 @@
 }
 
 .section-benefits {
-  background: url("../images/home/bg-benefits.jpg") no-repeat center;
+  background: url("../images/home/bg-benefits.png") no-repeat center;
+  background-size: auto 540px;
   height: 540px;
   text-align: justify;
   .container {
@@ -195,8 +191,7 @@
   }
   .section-about {
     .container {
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding: 40px 0;
     }
     .banner-africa-mobile {
       display: block;
@@ -231,6 +226,7 @@
     background-image: url("../images/home/bg-benefits-mobile.jpg");
     background-size: cover;
     height: 700px;
+
     .container {
       padding-top: 30px;
     }

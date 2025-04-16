@@ -419,6 +419,10 @@ $(document).ready(function () {
       // a.remove();
       // URL.revokeObjectURL(url);
 
+      if (sum < 100) {
+        $("#result").addClass("low");
+      }
+
       $(".step-indicator").hide();
       $("#questionnaireForm").hide();
       $("#result").show();

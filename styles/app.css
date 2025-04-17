@@ -307,25 +307,6 @@ table {
   }
 }
 
-.wrapper {
-  height: 100%;
-  min-height: 100%;
-}
-.wrapper.flex {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-.wrapper.flex .main-content {
-  height: 100%;
-}
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -371,6 +352,10 @@ table {
 .footer .f-left {
   font-weight: 600;
   text-align: center;
+}
+
+.main-content {
+  min-height: calc(100vh - 64px - 104px);
 }
 
 .section-fighting {

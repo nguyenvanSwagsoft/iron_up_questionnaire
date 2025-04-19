@@ -347,7 +347,7 @@ $(document).ready(function () {
     $(`#step${step}`).html(`
         <div class="step-inner">
           <h3>
-            <img src="../images/home/icon-benefits.svg" alt="${
+            <img src="./images/home/icon-benefits.svg" alt="${
               listQuestions.Category
             }" width="108" />
             ${listQuestions.Category}

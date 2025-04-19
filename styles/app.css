@@ -719,7 +719,7 @@ table {
   display: block;
 }
 .iron-up-page .section-consult {
-  background: url("../../images/iron-up/bg-grey.png") no-repeat center;
+  background: url("../images/iron-up/bg-grey.png") no-repeat center;
   max-width: 800px;
   min-height: 800px;
   padding: 88px 116px 0;
@@ -791,7 +791,7 @@ table {
   text-transform: uppercase;
 }
 .iron-up-page .section-action .btn.btn-fill {
-  background: url("../../images/iron-up/bg-btn.png") no-repeat center;
+  background: url("../images/iron-up/bg-btn.png") no-repeat center;
   background-size: 280px 56px;
   color: #fff;
 }
@@ -853,7 +853,7 @@ table {
 }
 @media (max-width: 767px) {
   .iron-up-page .section-consult {
-    background-image: url("../../images/iron-up/bg-grey-mobile.png");
+    background-image: url("../images/iron-up/bg-grey-mobile.png");
     background-position: top center;
     padding: 25px 25px 0;
     max-width: 343px;
@@ -925,7 +925,7 @@ table {
   display: none;
 }
 .questionnaire-step .list-answers label {
-  background: url("../../images/components/radio/radio.svg") no-repeat center;
+  background: url("../images/components/radio/radio.svg") no-repeat center;
   color: #ff1f3c;
   width: 320px;
   height: 72px;
@@ -944,10 +944,10 @@ table {
   text-transform: uppercase;
 }
 .questionnaire-step .list-answers label:hover {
-  background-image: url("../../images/components/radio/radio-hover.svg");
+  background-image: url("../images/components/radio/radio-hover.svg");
 }
 .questionnaire-step .list-answers input[type=radio]:checked + label {
-  background-image: url("../../images/components/radio/radio-checked.svg");
+  background-image: url("../images/components/radio/radio-checked.svg");
 }
 .questionnaire-step .f-action {
   margin-top: 72px;
@@ -986,11 +986,11 @@ table {
   cursor: not-allowed;
 }
 .questionnaire-step .f-action button.btn-next {
-  background: url("../../images/components/button/btn-red.svg") no-repeat center;
+  background: url("../images/components/button/btn-red.svg") no-repeat center;
   color: #fff;
 }
 .questionnaire-step .f-action button.btn-next:disabled, .questionnaire-step .f-action button.btn-next.disabled {
-  background-image: url("../../images/components/button/btn-disabled.svg");
+  background-image: url("../images/components/button/btn-disabled.svg");
   opacity: 1;
 }
 @media (max-width: 992px) {

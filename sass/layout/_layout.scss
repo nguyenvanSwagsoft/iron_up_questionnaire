@@ -25,6 +25,30 @@
       text-decoration: none;
     }
   }
+  .f-right {
+    font-size: 18px;
+    font-weight: 500;
+    a {
+      font-weight: 700;
+      color: #fff;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .container {
+      display: block;
+      height: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .f-right {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+  }
 }
 
 .footer {

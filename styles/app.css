@@ -339,6 +339,29 @@ table {
 .header .f-logo:hover {
   text-decoration: none;
 }
+.header .f-right {
+  font-size: 18px;
+  font-weight: 500;
+}
+.header .f-right a {
+  font-weight: 700;
+  color: #fff;
+}
+.header .f-right a:hover {
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .header .container {
+    display: block;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .header .f-right {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+}
 
 .footer {
   background-color: #ff1f3c;
@@ -378,6 +401,9 @@ table {
 }
 .section-fighting .f-left .f-banner {
   margin-bottom: 32px;
+}
+.section-fighting .fs-up {
+  font-size: 17px;
 }
 .section-fighting .f-action {
   display: -webkit-box;
